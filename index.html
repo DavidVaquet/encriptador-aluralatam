@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura Latam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="assets/logo.png" alt="Logo" class="logo" width="120" height="40">
+        </header>
+        <main class="main-content">
+            <textarea class="input-text" id="input-user" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="warning">
+                <p> <img src="assets/icono.png" class="icon" alt="warning" width="16" height="16">
+                    Solo letras minúsculas y sin acentos.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="button encrypt" onclick="encrypt()">Encriptar</button>
+                <button class="button decrypt" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </main>
+        <aside class="aside">
+            <img src="assets/nino.png" alt="Lateral" class="lateral-image">
+            <p class="message-title" id="message-title">Ningún mensaje fue encontrado</p>
+            <p class="message-subtitle" id="message-subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
+            
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
